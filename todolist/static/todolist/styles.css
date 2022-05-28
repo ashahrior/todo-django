@@ -1,0 +1,102 @@
+body {
+	background: #2e7089;
+	font-family:  'Open Sans', sans-serif;
+}
+#wrapper {
+	margin-top: 10% !important;
+}
+#content {
+	padding: 25px;
+	border-radius: 15px;
+}
+#content > h2 {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 0;
+}
+.t20 {
+	margin-top: 20px;
+}
+.todo-completed {
+	text-decoration: line-through;
+	background: rgba(149, 165, 166, .3);
+}
+footer {
+	margin-top: 20px;
+	color: white;
+}
+#add-btn {
+	background-color:#24b8c7;
+	font-size: 20px;
+}
+#add-btn:hover{
+	background-color:#3537c5;
+}
+
+.pushable {
+	position: relative;
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: hsl(0deg 0% 0% / 0.25);
+	transform: translateY(2px);
+}
+.edge {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: hsl(340deg 100% 32%);
+}
+.front {
+	display: block;
+	position: relative;
+	padding: 7px 38px;
+	border-radius: 12px;
+	font-size: 1.25rem;
+	color: white;
+	background: hsl(345deg 100% 47%);
+	transform: translateY(-4px);
+}
+
+.pushable:hover .front {
+	transform: translateY(-6px);
+}
+.pushable:hover .shadow {
+	transform: translateY(4px);
+}
+.pushable:active .front {
+	transform: translateY(-2px);
+}
+.pushable:active .shadow {
+	transform: translateY(1px);
+}
+
+.pushable:focus:not(:focus-visible) {
+	outline: none;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+li:hover {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+input:placeholder-shown {
+	font-style: italic;
+ }
