@@ -68,7 +68,7 @@
 	
 						<ul class="list-group t20">
 							{% for todolist in todo_items %}
-								{% if todotlist.completed %}
+								{% if todolist.completed %}
 									<li class="list-group-item mb-1 rounded todo-completed">{{todolist.text}}</li>
 								{% else %}
 									<a href="{% url 'completed' todolist.id %}"><li class="list-group-item mb-1 rounded">{{todolist.text}}</li></a>
